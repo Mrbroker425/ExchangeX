@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Support and FAQs</title>
+	<link rel="stylesheet" href="Support.css">
+	<script src="Support.js"></script>
+</head>
+<body>
+	<section>
+		<img class="l2"  src="Logo.jpg" alt="Home page image">
+ 
+	</section>
+	<header>
+		<nav> 
+			<ul>
+				<li><a  href = "MainPage.html">Home</a></li>
+				<li><a href = "index.html">About</a></li>
+				<li><a href = "Exchange.html">Exchange</a></li>
+				<li><a href = "Conveter.html">Buy&Sell</a></li>
+				<li><a href = "Support.html">Support&FQAs</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>FAQs</h2>
+		<div class="faq">
+			<h3>How do I sign-up?<br>Sign up & KYC<br>
+                Everything you need to know on signing up and verifying<br> your ExchangeX account.</h3>
+			
+		</div>
+		<div class="faq">
+			<h3>How can I exchange currency on ExchangeX?<br>On our ExchangeX website go to the exchange webpage. </h3>
+			
+		</div>
+		<div class="faq">
+			<h3>Is the site secure?<br>Security<br>
+                Learn how to secure your account and avoid scams.</h3>
+			
+		</div>
+		<h2>Contact Us</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send" onclick="SubmitComplaint()">
+		</form>
+        <section>
+            <img src="Contact-removebg-preview.png">
+        </section>
+		
+		<script>
+			function SubmitComplaint(){
+				alert("Your complaint has been noted. ");
+			}
+		</script>
+	</main>
+</body>
+</html>

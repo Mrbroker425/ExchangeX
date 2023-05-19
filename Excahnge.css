@@ -1,0 +1,168 @@
+
+h1{
+text-align: center;
+color: black;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+   /* background-color: #5271ff; */
+   background-color: #fff;  
+}
+center{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: #5271ff;
+    margin-top: -15px;
+    padding: 12px 15px;   
+}
+
+ul {
+    display: flex;
+    width : 75%; /*when more webpages are added it will change*/
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 900;
+}
+
+ul li{
+    list-style: none;
+    transition: all 0.5s;
+    padding: 10px 10px;
+    position: relative;
+    margin-left: 120px;
+}
+
+ul li ::after{
+    content : "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color:#fff;
+    transition: 0.5s;   
+}
+ul li :hover::after{
+    width: 100%;
+    bottom: 0;
+}
+ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    color: #fff;
+}
+ul li a.active,
+ul li :hover a{
+    color: rgb(0, 0, 0);
+}
+.wrapper{
+    width: 370px;
+    padding : 30px;
+    border-radius: 7px;
+    background: #5271ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper Header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;    
+}
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+form p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 4px;
+    border: 1px solid #999;
+}
+form input:focus{
+    padding: 0 6px;
+    border: 1px solid #675AFE;
+}
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    background: #fff;
+}
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box select ::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select ::-webkit-scrollbar-track{
+    background: #fff;
+}
+.select-box select ::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+.select-box img{
+    max-width: 25px;
+}
+.drop-list .ExchangeArrow{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+form button{
+    height: 52px;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+    background: #fff;
+}
+.P1{
+width: 30%;
+position: absolute;
+margin-top: -790px;
+}
+.P3{
+    width: 30%;
+    position: absolute;
+    margin-top: -780px;
+    margin-left: 940px;
+    }
+/*footer{
+    text-align: center;
+    background-color: #5271ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/

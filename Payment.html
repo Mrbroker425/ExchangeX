@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Section</title>
+    <link rel="stylesheet" href="Payment.css">
+  </head>
+  <body>
+    <h1>Payment Section</h1>
+    <nav> 
+      <ul>
+          <li><a  href = "MainPage.html">Home</a></li>
+          <li><a href = "index.html">About</a></li>
+          <li><a href = "Exchange.html">Exchange</a></li>
+          <li><a href = "Conveter.html">Buy&Sell</a></li>
+          <li><a href = "Support.html">Support&FQAs</a></li>
+      </ul>
+  </nav>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required><br>
+
+      <label for="expDate">Expiration Date:</label>
+      <input type="text" id="expDate" name="expDate" required><br>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required><br>
+
+      <button type="button" onclick="processPayment()"><a href = "MainPage.html">Pay Now</a></button>
+    </form>
+
+    <div id="paymentResult"></div>
+    <section>
+      <img src="istockphoto-1279104465-612x612-removebg-preview.png">
+    </section>
+    <section>
+      <img class="u" src="6607631.liy-removebg-preview.png">
+    </section>
+     <h1>ExchangeX...<br><marquee>The journey to simplicity<br> starts with us &#128516</h1></marquee>
+     <div>
+      <img class="e" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSikBacy00FJZZNh5Q_J7Qd5tPm_3WaBxNUsEcGAn7qDxlQ7BLFQHNZs4GBw3vQhC8QYfg&usqp=CAU">
+    </div>
+    <script>
+      function processPayment() {
+      alert("Your payment is successful");
+}
+    </script>
+  </body>
+</html>

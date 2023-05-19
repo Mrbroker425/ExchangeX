@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="Converter.css">
+  </head>
+  <body>
+    <h1>Currency Converter</h1>
+    <nav> 
+      <ul>
+          <li><a  href = "MainPage.html">Home</a></li>
+          <li><a  href = "index.html">About</a></li>
+          <li><a  href = "Exchange.html">Exchange</a></li>
+          <li><a  href = "Conveter.html">Buy&Sell</a></li>
+          <li><a  href = "Support.html">Support&FQAs</a></li>
+        
+      </ul>
+  </nav>
+    <div class="container">
+      <div class="input-container">
+        <label for="from">From:</label>
+        <input type="number" id="from" placeholder="0">
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+          <option value="CAD">ZAR</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="to">To:</label>
+        <input type="number" id="to" placeholder="0">
+        <select id="toCurrency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">ZAR</option>
+        </select>
+      </div>
+      <button  onclick="Buy()"><a style="color: azure;" href="Payment.html">Buy</button></a>
+      <br>
+      <button onclick="Buy()"><a style="color:black;" href="Exchange.html">SEll</a></button>
+    </div>
+    <script src="Converter.js"></script>
+    <section>
+        <img class="img" src="data:image/png;base64,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"/>
+    </section>
+    <section>
+        <img class="himg" src="6607631.liy.png"/>
+    </section>
+    <section>
+      <img class="himg2" src="currency exchange.jpg"/>
+  </section>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+	background-color: #5271ff;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+}
+
+h1 {
+	margin: 0;
+}
+
+.search-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.search-container input[type="text"] {
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	width: 300px;
+}
+
+.search-container button {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 0 5px 5px 0;
+}
+
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+h2 {
+	margin-top: 40px;
+	color: #333;
+	font-weight: 900;
+}
+
+.faq {
+	margin-bottom: 20px;
+}
+
+.faq h3 {
+	cursor: pointer;
+	color: #333;
+	font-weight: 900;
+}
+
+.faq p {
+	display: none;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 40px auto;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+h3{
+color: #fff;
+}
+img{
+    position: absolute;
+    z-index: -1;
+    margin-top: -790px;
+    width: 50%;
+    margin-left: 650px;
+}
+nav{
+    background-color: #5271ff;
+}
+
+ul {
+    display: flex;
+    width : 20%;
+    justify-content: space-between;
+    font-family: sans-serif;
+    position: relative;
+    font-weight: 900;
+}
+
+ul li{
+    list-style: none;
+    transition: all 0.5s;
+    padding: 10px 10px;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 90px;
+}
+
+ul li ::after{
+    content : "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color:#fff;
+    transition: 0.5s;
+    
+}
+ul li :hover::after{
+    width: 100%;
+    bottom: 0;
+}
+ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+    color:#fff;
+}
+.l2{
+width: 17%;
+position: absolute;
+margin-top:105px;
+margin-left: 4px;
+}

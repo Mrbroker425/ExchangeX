@@ -1,0 +1,23 @@
+img{
+    position: absolute;
+    margin-top: 10px;
+    width: 110px;
+
+    
+}
+.l1{
+    position: absolute;
+ width: 100%;
+ margin-top: -8%;
+ z-index: -1;
+}
+button{
+margin-top:440px;
+margin-left: 250px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding:  15px;
+border-radius: 55px;
+font-size: large;
+background-color: whitesmoke;
+
+}

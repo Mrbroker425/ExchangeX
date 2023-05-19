@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5271ff;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: Tahoma;
+    margin-top: 30px;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 50%;
+    min-width: 50%;
+    padding: 50% auto;
+    margin-right: 150px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    color: aliceblue;
+    font-family: Tahoma;
+    display: block;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+  }
+  
+  button {
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+  
+  #paymentResult {
+    text-align: center;
+    margin-top: 20px;
+  }
+  img{
+  margin-top: -340px;
+  margin-left: 10px;
+  width: 35%;
+  position: absolute;
+  z-index: -1;
+  }
+  .u{
+    margin-top: -330px;
+    margin-left: 950px;
+    width: 24%;
+    position: absolute;
+    z-index: -1;
+    animation: rotate 7s linear infinite;
+    }
+    @keyframes rotate{
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+    .e{
+      position: absolute;
+    margin-top: -140px;
+    margin-left: -206px;
+    width: 110px;
+
+    }
+    nav{
+      background-color: #5271ff;
+  }
+  
+  ul {
+      display: flex;
+      width : 20%;
+      justify-content: space-between;
+      font-family: sans-serif;
+      position: relative;
+      font-weight: 900;
+  }
+  
+  ul li{
+      list-style: none;
+      transition: all 0.5s;
+      padding: 10px 10px;
+      position: relative;
+      margin-top: -100px;
+      margin-left: 110px;
+  }
+  
+  ul li ::after{
+      content : "";
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 4px;
+      background-color:#fff;
+      transition: 0.5s;
+      
+  }
+  ul li :hover::after{
+      width: 100%;
+      bottom: 0;
+  }
+  ul li a{
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 24px;
+      transition: 0.3s;
+      color:#fff;
+  }
